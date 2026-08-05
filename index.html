@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selamat Ulang Tahun, Ibu ❤️</title>
+    <style>
+        :root {
+            --bg-color: #fff0f3;
+            --card-bg: #ffffff;
+            --accent: #ff4d6d;
+            --accent-soft: #ff8fa3;
+            --text-main: #590d22;
+            --text-muted: #800f2f;
+            --border-color: #ffccd5;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.7;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        /* Header Section */
+        header {
+            text-align: center;
+            padding: 50px 20px 30px;
+        }
+
+        .badge {
+            background-color: #ffe5ec;
+            color: var(--accent);
+            padding: 6px 18px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: bold;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            display: inline-block;
+            margin-bottom: 15px;
+            border: 1px solid var(--border-color);
+        }
+
+        header h1 {
+            font-size: 2.8rem;
+            color: var(--text-main);
+            margin-bottom: 15px;
+            font-weight: 800;
+        }
+
+        header p {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Surat Isi Hati */
+        .letter-section {
+            background-color: var(--card-bg);
+            border-radius: 16px;
+            padding: 40px;
+            margin: 30px 0 50px;
+            box-shadow: 0 10px 25px rgba(255, 77, 109, 0.08);
+            border: 1px solid var(--border-color);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .letter-section::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 5px;
+            height: 100%;
+            background: linear-gradient(to bottom, var(--accent), var(--accent-soft));
+        }
+
+        .letter-section h2 {
+            color: var(--accent);
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .letter-content p {
+            margin-bottom: 18px;
+            font-size: 1.05rem;
+            color: var(--text-main);
+            text-align: justify;
+        }
+
+        .letter-content p strong {
+            color: var(--accent);
+        }
+
+        /* Section Title */
+        .section-title {
+            font-size: 1.6rem;
+            margin: 50px 0 25px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: var(--text-main);
+        }
+
+        .section-title::after {
+            content: "";
+            flex-grow: 1;
+            height: 2px;
+            background: var(--border-color);
+        }
+
+        /* Grid Cards */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            padding: 25px;
+            border: 1px solid var(--border-color);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(255, 77, 109, 0.12);
+            border-color: var(--accent-soft);
+        }
+
+        .card-icon {
+            font-size: 2rem;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            color: var(--text-main);
+        }
+
+        .card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        /* Galeri Kenangan */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+
+        .gallery-item {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+            text-align: center;
+            padding: 15px;
+            box-shadow: 0 4px 12px rgba(255, 77, 109, 0.05);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .gallery-item p {
+            font-size: 0.9rem;
+            color: var(--text-main);
+            font-weight: 600;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 0 20px;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            border-top: 1px solid var(--border-color);
+            margin-top: 60px;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2.1rem;
+            }
+            .letter-section {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- HEADER -->
+        <header>
+            <span class="badge">Spesial Hari Ulang Tahun</span>
+            <h1>Selamat Ulang Tahun, Ibu 💖</h1>
+            <p>Halaman kecil ini dirancang khusus berisi ungkapan hati, kenangan manis, serta persembahan terbaik untuk Ibu.</p>
+        </header>
+
+        <!-- SURAT ISI HATI -->
+        <section class="letter-section">
+            <h2>✉️ Surat Dari Lubuk Hati</h2>
+            <div class="letter-content">
+                <p><strong>Untuk Ibu Terhebat,</strong></p>
+                <p>Mungkin aku tidak selalu bisa merangkai kata-kata indah secara langsung setiap hari. Namun di hari yang spesial ini, aku ingin Ibu tahu betapa bersyukurnya aku dilahirkan dan dibesarkan oleh wanita hebat dan penuh kasih seperti Ibu.</p>
+                <p>Terima kasih atas segala pengorbanan yang tak pernah Ibu hitung, doa-doa senyap yang selalu menjaga langkahku, serta kehangatan yang selalu membuat rumah terasa aman. Semua pencapaian yang kumiliki hari ini adalah buah dari peluh dan kebaikan Ibu.</p>
+                <p>Semoga di usia yang baru ini, Ibu selalu diberikan kesehatan, ketenangan hati, kebahagiaan yang melimpah, dan umur yang berkah. Selamat ulang tahun, Ibu!</p>
+            </div>
+        </section>
+
+        <!-- KENANG-KENANGAN BERSAMA IBU -->
+        <h2 class="section-title">🌸 Momen & Kenangan Berharga</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="01.jpg" alt="Kenangan Masa Kecil">
+                <p>Masa Kecil yang Hangat</p>
+            </div>
+            <div class="gallery-item">
+                <img src="02.jpg" alt="Liburan Bersama">
+                <p>Petualangan & Tawa Bersama</p>
+            </div>
+            <div class="gallery-item">
+                <img src="03.jpg" alt="Momen Keluarga">
+                <p>Kehangatan Rumah</p>
+            </div>
+        </div>
+
+        <!-- HADIAH & PERSEMBAHAN -->
+        <h2 class="section-title">🎁 Kado & Janji Untuk Ibu</h2>
+        <div class="grid">
+            <div class="card">
+                <span class="card-icon">👑</span>
+                <h3>Hari Bebas Tugas</h3>
+                <p>Hari ini Ibu tidak perlu memikirkan pekerjaan rumah. Biarkan kami yang mengurus semuanya untuk Ibu.</p>
+            </div>
+
+            <div class="card">
+                <span class="card-icon">🌷</span>
+                <h3>Jalan-Jalan Spesial</h3>
+                <p>Waktu khusus untuk membawa Ibu berlibur atau mengunjungi tempat favorit yang sudah lama ingin dikunjungi.</p>
+            </div>
+
+            <div class="card">
+                <span class="card-icon">💝</span>
+                <h3>Waktu & Perhatian</h3>
+                <p>Janji untuk selalu ada, siap mendengarkan cerita Ibu, dan meluangkan lebih banyak waktu berkualitas bersama.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>Dibuat dengan penuh cinta &copy; 2026. Selamat Ulang Tahun untuk Ibu Tersayang!</p>
+    </footer>
+
+</body>
+</html>
